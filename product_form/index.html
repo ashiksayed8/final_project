@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+   
+   
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+<body>
+    <div class="container">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="product_name" class="form-control-label">Product Name: <span class="text-danger">*</span></label>
+                        <input type="text" id="product_name" class="form-control" name="product_name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="product_code" class="form-control-label">Product Code: <span class="text-danger">*</span></label>
+                        <input type="text" id="product_code" class="form-control" name="product_code">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="product_quantity" class="form-control-label">Product Quantity: <span class="text-danger">*</span></label>
+                        <input type="text" id="product_quantity" class="form-control" name="product_quantity">
+                    </div>
+                </div>
+                <div class="form-row mt-md-3">
+                    <div class="form-group col-md-4">
+                        <label for="product_size" class="form-control-label">Product Size: <span class="text-danger">*</span></label>
+                        <input type="text" id="product_size" class="form-control" name="product_size">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="product_color" class="form-control-label">Product Color: <span class="text-danger">*</span></label>
+                        <input type="text" id="product_color" class="form-control" name="product_color">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="selling_price" class="form-control-label">Selling Price: <span class="text-danger">*</span></label>
+                        <input type="text" id="selling_price" class="form-control" name="selling_price">
+                    </div>
+                </div>
+                <div class="form-row mt-md-3">
+                    <div class="form-group col-md-4">
+                        <label for="product_category" class="form-control-label">Category: <span class="text-danger">*</span></label>
+                        <select class="form-control" name="category_id" id="product_category">
+                            <option label="Choose Category"></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="product_subcategory" class="form-control-label">Sub Category: <span class="text-danger">*</span></label>
+                        <select class="form-control" name="subcategory_id" id="product_category">
+                
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="product_brand" class="form-control-label">Brand: <span class="text-danger">*</span></label>
+                        <select class="form-control" name="brand_id" id="product_brand">
+                            <option label="Choose Brand"></option>
+                            <option value=""></option>
+                        </select>
+                    </div>              
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name= "main_slider" value="1" id="main_slider">
+                                <label class="form-check-label"  for="main_slider">Main Slider</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name= "hot_deal" value="1" id="hot_deal">
+                                <label class="form-check-label"  for="hot_deal">Hot Deal</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name= "best_rated" value="1" id="best_rated">
+                                <label class="form-check-label"  for="best_rated">Best Rated</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name= "trend" value="1" id="trend">
+                                <label class="form-check-label"  for="trend">Trend Product</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name= "mid_slider" value="1" id="mid_slider">
+                                <label class="form-check-label"  for="mid_slider">Mid Slider</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name= "hot_new" value="1" id="hot_new">
+                                <label class="form-check-label"  for="hot_new">Hot New</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name= "buyone_getone" value="1" id="buyone_getone">
+                                <label class="form-check-label"  for="buyone_getone">By One Get One</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">                  
+                    <div class="col-md-12 mt-md-3">
+                        <div class="form-group">
+                            <label for="summernote" class="form-control-label">Product Details<span class="text-danger">*</span>
+                            </label>
+                            <textarea id="summernote" name="products_details">
+                             </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">                  
+                    <div class="col-md-6 mt-md-3">
+                        <div class="form-group">
+                            <label for="image_file" class="form-label">Image <span class='text-danger'>*</span></label>
+                            <input class="form-control form-control-lg" id="image_file" type="file" onchange="readURL(this);" required="" name="product_image"  />
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-md-3">
+                        <div class="">
+                            <img src="#" id="image" alt="Product_image">
+                        </div>
+                    </div>
+                </div>
+                <button  type="button" class="btn btn-info mt-3 mb-5 btn-block btn-lg">Submite</button>
+            </form> 
+     </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script> 
+    <script>
+        $('#summernote').summernote({
+          tabsize: 2,
+          height: 100
+        });
+     </script>
+
+    <script type="text/javascript">
+	    function readURL(input) {
+            if (input.files && input.files[0]) {
+                 var reader = new FileReader();
+                 reader.onload = function (e) {
+                   $('#image')
+                  .attr('src', e.target.result)
+                  .width(200)
+                  .height(150);
+          };
+            reader.readAsDataURL(input.files[0]);
+      }
+   }
+  </script>
+</body>
+</html>

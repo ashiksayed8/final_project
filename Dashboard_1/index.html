@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <h3 class="brand">
+                <span class="ti-unlink"></span>
+                <span>easywire</span>
+            </h3> 
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+
+        <div class="sidebar-menu">
+            
+            <ul class="list-group">
+
+                <a href="" class="bg-white list-group-item list-group-item-action text-black-50">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="far fa-caret-square-down fa-fw mr-3"></span>
+                        <span>Main Menu</span>
+                    </div>
+                </a>
+
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+
+                <a href="#sub_sections1" data-toggle="collapse" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                        <span>Dashboard</span>
+                        <span class="fas fa-angle-down ml-auto"></span>
+                    </div>
+                </a>
+
+                <div id="sub_sections1" class=" collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="fas fa-caret-right fa-fw mr-3"></span>
+                        <span>Change</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="fas fa-caret-right fa-fw mr-3"></span>
+                        <span>Change</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="fas fa-caret-right fa-fw mr-3"></span>
+                        <span>Change</span>
+                    </a>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <header class="d- flex justify-content-end">
+            <div class="logout">
+                 <a href="" class="text-white btn btn-danger" data-target="#sign-out" data-toggle="modal" ><i class="fas fa-sign-out-alt fa-lg mr-2"></i>Logout</a>
+            </div>
+        </header>
+
+        
+        <!--------Start modal------>
+        <div class="modal fade" id="sign-out">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h4 class="modal-title">Want to leave</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                Press logout to leave
+                </div>
+                <div class="modal-footer">
+                <a class="btn btn-success" href="">Change Password</a>
+                <a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-------End Modal---------->
+
+        <main>
+           
+            <h2 class="dash-title">Overview</h2>
+
+            <div class="dash-cards">
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-briefcase"></span>
+                        <div>
+                            <h5>Account Balance</h5>
+                            <h4>$30,659.45</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-reload"></span>
+                        <div>
+                            <h5>Pending</h5>
+                            <h4>$19,659.45</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-check-box"></span>
+                        <div>
+                            <h5>Processes</h5>
+                            <h4>$20,659.45</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
